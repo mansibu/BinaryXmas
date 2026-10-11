@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Binær Julekalender</title>
+  <meta name="description" content="En binær julekalender med 24 låger. Christmas = 0 … indtil den bliver 1.">
+
+  <!-- PWA / iOS -->
+  <meta name="theme-color" content="#000000">
+  <meta name="color-scheme" content="dark">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Binær Jul">
+  <meta name="application-name" content="Binær Jul">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23000'/%3E%3Crect x='4' y='4' width='56' height='56' fill='none' stroke='%23fff' stroke-width='2'/%3E%3Cpath d='M28 16h8v32h-8zM22 22h6v6h-6zM20 44h24v4H20z' fill='%23fff'/%3E%3C/svg%3E">
+  <link rel="apple-touch-icon" id="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23000'/%3E%3C/svg%3E">
+  <link rel="manifest" id="manifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="snow" class="snow" aria-hidden="true"></canvas>
+
+  <header class="header">
+    <h1 class="title">Binær Julekalender</h1>
+    <p class="subtitle" aria-label="JUL i binær">01001010 01010101 01001100</p>
+  </header>
+
+  <main>
+    <div id="calendar" class="calendar" role="group" aria-label="24 låger"></div>
+  </main>
+
+  <footer class="footer">
+    <button type="button" id="reset" class="reset">Start forfra</button>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
